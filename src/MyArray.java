@@ -45,17 +45,23 @@ public class MyArray<E> {
        }
        return min;
    }
-    public E arithmetic mean(){
-        E [] arrays= new arrays{6,9,10,12,-20,-46, 34, -33, 17, 26};
-    double average=0;
-    if(arrays.length>0){
-    double sum=0;
-    for(int i=0; i<arrays.lenght; i++){
-        sum+=arrays[i]
-       }
-        average = sum / arrays.length;    
+   public int searchariMedium(Medium<E> medium) {
+        int sum = 0;
+        for(int i=0; i<this.arrays.length; i++){
+            sum+= medium.medium((E) this.arrays);
+        }
+        return sum/ this.arrays.length;
+
     }
-    return average;
+     public int searchariMedium(Medium<E> medium) {
+        int sum = 0;
+        for(int i=0; i<this.arrays.length; i++){
+            sum+= medium.medium((E) this.arrays);
+        }
+        return sum/ this.arrays.length;
+
+    }
+    
 }
     @Override
     public String toString() {
