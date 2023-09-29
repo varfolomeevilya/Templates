@@ -45,7 +45,7 @@ public class MyArray<E> {
        }
        return min;
    }
-    public void arithmetic mean(){
+    public E arithmetic mean(){
         E [] arrays= new arrays{6,9,10,12,-20,-46, 34, -33, 17, 26};
     double average=0;
     if(arrays.length>0){
