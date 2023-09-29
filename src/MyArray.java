@@ -55,7 +55,8 @@ public class MyArray<E> {
        }
         average = sum / arrays.length;    
     }
-    }
+    return average;
+}
     @Override
     public String toString() {
         return "MyArray{" + Arrays.toString(arrays) +
