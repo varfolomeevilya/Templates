@@ -53,7 +53,7 @@ public class MyArray<E> {
         return sum/ this.arrays.length;
 
     }
-     public int searchariMedium(Medium<E> medium) {
+     public int searcharMedium(Medium<E> medium) {
         int sum = 0;
         for(int i=0; i<this.arrays.length; i++){
             sum+= medium.medium((E) this.arrays);
