@@ -36,7 +36,26 @@ public class MyArray<E> {
       }
       return max;
    }
-  public E minItem(Comparator<E> comparator)
+   public E minItem(Comparator<E> comparator){
+       E min = this.arrays[0];
+       for(int i=0; i<size; i++){
+           if(comparator.compare(min, this.arrays[i])<0){
+               min=this.arrays;
+           }
+       }
+       return min;
+   }
+    public void arithmetic mean(){
+        E [] arrays= new arrays{6,9,10,12,-20,-46, 34, -33, 17, 26};
+    double average=0;
+    if(arrays.length>0){
+    double sum=0;
+    for(int i=0; i<arrays.lenght; i++){
+        sum+=arrays[i]
+       }
+        average = sum / arrays.length;    
+    }
+    }
     @Override
     public String toString() {
         return "MyArray{" + Arrays.toString(arrays) +
