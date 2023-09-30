@@ -36,16 +36,7 @@ public class MyArray<E> {
       }
       return max;
    }
-   public E minItem(Comparator<E> comparator){
-       E min = this.arrays[0];
-       for(int i=0; i<size; i++){
-           if(comparator.compare(min, this.arrays[i])<0){
-               min=this.arrays;
-           }
-       }
-       return min;
-   }
-  
+
      public int searcharMedium(Medium<E> medium) {
         int sum = 0;
         for(int i=0; i<this.arrays.length; i++){
