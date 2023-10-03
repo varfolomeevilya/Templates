@@ -45,8 +45,25 @@ public class MyArray<E> {
         return sum/ this.arrays.length;
 
     }
-    
-}
+      public void sort(Comparator comparator){
+        Arrays.sort(arrays);
+
+    }
+    public void sortMax(Comparator<E> comparator){
+        Arrays.sort(arrays, Collections.reverseOrder());
+    }
+    public void searchBinarn(E  search){
+        Arrays.sort(arrays);
+        int index= Arrays.binarySearch(arrays, search);
+    }
+    public void  replacingValue(E search, E replacing ){
+        for(int i=0; i<arrays.length; i++){
+            if(arrays[i].equals(search)){
+                arrays[i]= replacing;
+            }
+        }
+    }
+
     @Override
     public String toString() {
         return "MyArray{" + Arrays.toString(arrays) +
