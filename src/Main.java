@@ -58,6 +58,29 @@ public class Main {
             }
         });
         System.out.println(medium);
+         integerMyArray.sort(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        integerMyArray.sortMax(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        Integer searchBinarn= integerMyArray.searchMinItem(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        System.out.println(searchBinarn);
+//       Integer j =integerMyArray.replacingValue(3, 10){
+//
+//
+//        }
     }
 
 
