@@ -5,14 +5,13 @@ import java.util.Random;
 public class MyArray<E> {
 
     private E[] arrays;
-    private int position;
     private int size;
 
     public MyArray(){
         this.arrays=arrays;
-        this.position=0;
+    
     }
-    public MyArray(E[] arrays, int position){
+    public MyArray(E[] arrays){
        this.arrays= arrays;
        this.position=position;
 
@@ -36,8 +35,16 @@ public class MyArray<E> {
       }
       return max;
    }
-
-     public int searcharMedium(Medium<E> medium) {
+    public E searchMinItem(Comparator<E> comparator){
+        E min= this.arrays[0];
+        for(int i=0; i<size; i++){
+            if(comparator.compare(min, this.arrays[i])<0){
+                min=this.arrays[i];
+            }
+        }
+        return min;
+   }
+     public int searchMedium(Medium<E> medium) {
         int sum = 0;
         for(int i=0; i<this.arrays.length; i++){
             sum+= medium.medium((E) this.arrays);
