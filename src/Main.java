@@ -83,6 +83,46 @@ public class Main {
 //        }
     }
 
-
 }
+public class Task02{
+     public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int size= scanner.nextInt();
+        MyMatrix<Integer> integerMyMatrix = new MyMatrix<>(120);
 
+        System.out.println(integerMyMatrix.toString());
+       iRandom<Integer>integeriRandom = new iRandom<Integer>() {
+           @Override
+           public Integer random() {
+               return Integer.valueOf((int) (Math.random()*120));
+           }
+       };
+
+       Integer max= integerMyMatrix.maxItem(new Comparator<Integer>() {
+           @Override
+           public int compare(Integer o1, Integer o2) {
+               return o1.compareTo(o2);
+           }
+       });
+       System.out.println(max);
+       Integer min= integerMyMatrix.searchMinItem(new Comparator<Integer>() {
+           @Override
+           public int compare(Integer o1, Integer o2) {
+               return o1.compareTo(o2);
+           }
+       });
+        System.out.println(min);
+       Integer medium= integerMyMatrix.searchMedium(new iMedium<Integer>() {
+            @Override
+            public int medium(Integer integer) {
+                int sum =0;
+                for(int i=0; i<integer; i++){
+                    sum+=integer;
+                }
+                return sum/integer;
+            }
+        });
+        System.out.println(medium);
+
+    }
+}
