@@ -41,9 +41,25 @@ public class Main {
             }
         });
         System.out.println(i);
-
+       Integer min = integer.searchMinItem( new Comparator<Integer>{
+           public int compare(Integer o1, Integer o2){
+               return o1.compareTo(o2);
+           }
+       });
+        System.out.println(min)
+        String medium= String.valueOf(new Medium<String>() {
+            @Override
+            public int medium(String s){
+                int sum=0;
+                for(int i=0; i< s.length();i++){
+                    sum+= s.charAt(i);
+                }
+                return sum/s.length();
+            }
+        });
+        System.out.println(medium);
     }
 
 
-    }
 }
+
