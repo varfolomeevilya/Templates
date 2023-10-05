@@ -42,7 +42,7 @@ public class Task02 {
             return sum / integer;
         }
     });
-
+     
 
 
 }
