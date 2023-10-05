@@ -45,10 +45,50 @@ public class Task02 {
      Integer plus = integerMatrix. plus(new iOperator<Integer>(){
          @Override
              public int plus (Integer integer){
-                 
+                 int res=0;
+                 for(int i=0; i< integer; i++){
+                     for(int j =0; j<integer; j++){
+                         res = integer + integer;
+                     }
+                 }
+                 return res;
              }
      });
-
-
+     Integer minus = integerMyMatrix.minus(new iOperator<Integer>(){
+         @Override
+         public int minus(Integer integer){
+             int res=0;
+             for(int i=0; i< integer; i++){
+                 for(int j=0; j<integer; j++){
+                     res = integer - integer;
+                 }
+             }
+             return res;
+         }
+     });
+     Integer multip = integerMyMatrix.multip(new iOperator <Integer>(){
+         @Override
+         public int multip(Integer integer){
+             int res=0;
+             for(int i=0; i< integer; i++){
+                 for(int j=0; j<integer; j++){
+                     res = integer * integer;
+                 }
+             }
+             return res;
+         }
+     });
+     Integer division = integerMyMatrix.division(new iOperator<Integer>(){
+         @Override
+         public int division(Integer integer){
+             int res=0;
+             for(int i=0; i<integer; i++){
+                 for(int j=0; j<integer; j++){
+                     res = integer / integer;
+                 }
+             }
+             return res;
+         }
+     });
 }
 
