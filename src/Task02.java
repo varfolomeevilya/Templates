@@ -42,7 +42,12 @@ public class Task02 {
             return sum / integer;
         }
     });
-     
+     Integer plus = integerMatrix. plus(new iOperator<Integer>(){
+         @Override
+             public int plus (Integer integer){
+                 
+             }
+     });
 
 
 }
