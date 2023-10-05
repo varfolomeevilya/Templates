@@ -20,7 +20,7 @@ public class MyMatrix<T>{
             }
 
         }
-        public int  plus(iOperator  ioperator){
+        public int  plus(iOperator <T> ioperator){
             int  res = (int)this.matrix[0];
             for(int i =0; i<this.matrix.length; i++){
                 for(int j=0; j<this.matrix.length; j++){
@@ -29,16 +29,17 @@ public class MyMatrix<T>{
             }
             return res;
         }
-        public void minus(iOperator ioperator){
+        public int minus(iOperator <T> ioperator){
             int res=0;
             for (int i=0; i<this.matrix.length; i++){
                 for(int j=0; j<this.matrix.length; j++){
-                    res = this.matrix.length + this.matrix.length;
+                    res = this.matrix.length - this.matrix.length;
                 }
+                return res;
             }
 
         }
-        public int multip(iOperator  iOperator){
+        public int multip(iOperator <T> iOperator){
             int res=0;
             for(int i=0; i<this.matrix.length; i++){
                 for(int j=0; j<this.matrix.length; j++){
